@@ -10,12 +10,17 @@ router.get('/portofolio', projectController.getAllProjects);
 router.post('/portofolio', projectController.createProject);
 
 // add routes student
-router.get('/sRegister', StudentController.addStudent);
+router.get('/sRegister', function(req,res){
+  res.render('sRegister');
+});
 router.post('/sRegister', StudentController.addStudent);
 router.get('/SLogin', StudentController.logstudent);
 
 //add routes client
-router.get('/cRegister', ClientController.addClient);
+router.get('/cRegister',function(req,res){
+  res.render('cRegister');
+  }
+);
 router.post('/cRegister', ClientController.addClient);
 router.get('/cLogin', ClientController.logClient);
 
