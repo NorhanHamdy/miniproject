@@ -10,7 +10,7 @@ let ClientController = {
       }
       else{
         console.log(Client);
-        res.redirect('cRegister');
+        res.redirect('cLogin');
       }
     })
   },
@@ -23,7 +23,8 @@ let ClientController = {
       }
       if(user){
         console.log(user);
-        return res.render('cLogin');
+        return res.render('home');
+          res.send("You are logged in :)");
       }
       else{
         res.send("Login Failed!");
