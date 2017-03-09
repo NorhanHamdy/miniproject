@@ -10,7 +10,7 @@ let StudentController = {
       }
       else{
         console.log(Student);
-        res.render('sRegister');
+        res.render('SLogin');
       }
     })
   },
@@ -24,7 +24,7 @@ let StudentController = {
       }
       else{
         console.log(student);
-        res.render('SLogin');
+        res.render('portofolio');
       }
 
     })
